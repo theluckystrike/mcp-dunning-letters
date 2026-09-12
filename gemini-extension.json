@@ -1,0 +1,22 @@
+{
+  "name": "mcp-dunning-letters",
+  "version": "0.21.0",
+  "description": "MCP server for dunning letters and overdue invoice payment reminders: reminder, final notice and aging. Chase overdue invoices on a ladder anchored to the due date: reminder 1, reminder 2, the final notice, with the aging and the day's chase list.",
+  "settings": [
+    {
+      "name": "mcp.zovo.one token",
+      "description": "A free anonymous token from https://mcp.zovo.one/mcp/token, or your Pro key. One token is one data space, and it is refreshed for another 30 days on every write.",
+      "envVar": "ZOVO_MCP_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "dunning-letters": {
+      "httpUrl": "https://mcp.zovo.one/mcp/dunning-letters",
+      "headers": {
+        "Authorization": "Bearer ${ZOVO_MCP_TOKEN}"
+      },
+      "description": "Chase overdue invoices on a ladder anchored to the due date: reminder 1, reminder 2, the final notice, with the aging and the day's chase list."
+    }
+  }
+}
