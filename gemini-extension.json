@@ -1,6 +1,6 @@
 {
   "name": "mcp-dunning-letters",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "MCP server for dunning letters and overdue invoice payment reminders: reminder, final notice and aging. Chase overdue invoices on a ladder anchored to the due date: reminder 1, reminder 2, the final notice, with the aging and the day's chase list.",
   "settings": [
     {
